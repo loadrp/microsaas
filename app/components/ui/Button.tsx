@@ -9,14 +9,14 @@ export default function Button({
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-
   return (
     <button
-      className={cn("p-3 text-white rounded-xl font-bold whitespace-nowrap hover:opacity-95 disabled:opacity-70",
+      className={cn(
+        "p-3 text-white rounded-xl font-bold whitespace-nowrap hover:opacity-95 disabled:opacity-70",
         variant === "primary" && "bg-accent-purple",
         variant === "secondary" && "bg-background-tertiary",
         variant === "ghost" && "border-border-primary",
-        props.className
+        props.className,
       )}
     >
       {children}

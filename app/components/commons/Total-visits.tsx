@@ -6,7 +6,7 @@ export function TotalVisits() {
       <span className="font-bold text-white">Total Visits</span>
       <div className="flex items-center gap-2 text-accent-green">
         <span className="text-3xl font-bold">100</span>
-        <TrendingUp/>
+        <TrendingUp />
       </div>
       {/* <div className="flex items-center gap-2">
         <button>
@@ -16,7 +16,6 @@ export function TotalVisits() {
           Sair
         </button>
       </div> */}
-      
     </div>
   );
 }

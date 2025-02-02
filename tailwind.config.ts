@@ -20,10 +20,9 @@ export default {
         "border-tertiary": "#97979B",
         "accent-purple": "#4B2DBB",
         "accent-green": "#87BB2D",
-        "accent-pink": "#B5446B"
+        "accent-pink": "#B5446B",
       },
     },
   },
   plugins: [],
 } satisfies Config;
-
