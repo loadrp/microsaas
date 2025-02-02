@@ -23,21 +23,19 @@ export default function UserCard() {
     <div className="flex flex-col gap-2 w-full">
       <span className="uppercase text-xs font-medium">Links</span>
       <div className="flex gap-3">
-        {icons.map((icon) => (
-          <button className="p-3 rounded-xl bg-[#1e1e1e] hover:bg-[#2e2e2e]">
+        {icons.map((icon, index) => (
+          <button key={index} className="p-3 rounded-xl bg-[#1e1e1e] hover:bg-[#2e2e2e]">
             {icon}
           </button>
         ))}
       </div>
+    </div>
       <div className="flex flex-col gap-3 w-full h-[172px]">
         <div className="w-full flex flex-col items-center gap-3">
           <Button className="w-full">Templates SaaS - Compre agora</Button>
           <Button ><Plus /></Button>
         </div>
       </div>
-
-    </div>
-
-    </div>
+  </div>
   );
 }

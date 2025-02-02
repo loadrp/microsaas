@@ -1,10 +1,12 @@
+import { ProjectCard } from "../commons/Project-card";
+import { TotalVisits } from "../commons/Total-visits";
 import UserCard from "../commons/User-card";
 import Button from "../ui/Button";
 import Input from "../ui/Input";
 
 export default function Hero() {
   return (
-    <div className="flex border">
+    <div className="flex m-auto">
       <div className="w-full flex flex-col gap-2 mt-[35vh]">
         <h1 className="text-white leading-[64px] text-5xl font-bold">
           Seus projetos e redes sociais em um único link
@@ -20,16 +22,18 @@ export default function Hero() {
           <Button>Criar agora</Button>
         </div>
         </div>
-        <div className="w-full flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,#050505_0%,#0F0F10_100%)]">
+        <div className="w-full flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,#4B2DBB,transparent_55%)]">
+          <div className="relative">
           <UserCard/>
           <div className="absolute -bottom-[7%] -right-[45%]">
-            {/*<TotalVisits/>*/}
+            <TotalVisits/>
           </div>
           <div className="absolute top-[20%] -left-[45%] -z-10">
-            {/* <ProjectCard/> */}
+            <ProjectCard imageSrc="./project1.jpg"/>
           </div>
           <div className="absolute -top-[5%] -left-[55%] -z-10">
-            {/* <ProjectCard/> */}
+            <ProjectCard imageSrc="./project2.jpg"/>
+          </div>
           </div>
         </div>
       </div>
