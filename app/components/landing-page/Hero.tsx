@@ -11,7 +11,7 @@ export default function Hero() {
         <h1 className="text-white leading-[64px] text-5xl font-bold">
           Seus projetos e redes sociais em um único link
         </h1>
-        <h2 className="text-content-headline leading-[24px] text-xl font-medium">
+        <h2 className="text-content-headline leading-[32px] text-xl font-medium">
           Crie sua própria página de projetos e compartilhe com o mundo.
           <br />
           Acompanhe o engajamento com Analytics de cliques
@@ -28,10 +28,10 @@ export default function Hero() {
           <div className="absolute -bottom-[7%] -right-[45%]">
             <TotalVisits />
           </div>
-          <div className="absolute top-[20%] -left-[45%] -z-10">
+          <div className="absolute top-[35%] -left-[45%] -z-10">
             <ProjectCard imageSrc="./project1.jpg" />
           </div>
-          <div className="absolute -top-[5%] -left-[55%] -z-10">
+          <div className="absolute top-[10%] -left-[55%] -z-10">
             <ProjectCard imageSrc="./project2.jpg" />
           </div>
         </div>
